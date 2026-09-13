@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto · Mi Rincón de Dibujos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+
+<div class="blob blob-a" aria-hidden="true"></div>
+<div class="blob blob-b" aria-hidden="true"></div>
+<div class="blob blob-c" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a class="marca" href="index.html">✦ Mi Rincón de Dibujos ✦</a>
+  <nav class="navbar">
+    <a href="index.html" class="nav-link">Catálogo</a>
+    <a href="sobre-mi.html" class="nav-link">Quién mantiene esto</a>
+    <a href="contacto.html" class="nav-link nav-link--activa">Contacto</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero hero--chica">
+    <h1 class="hero-titulo">Hablemos <span>un cachito</span></h1>
+    <p class="hero-sub">¿Querés un dibujo a pedido, avisarme de un error en el sitio o simplemente saludar? Escribime acá abajo.</p>
+  </section>
+
+  <section class="tarjeta-form">
+    <form class="form-contacto" action="mailto:hola@mirincondedibujos.com" method="post" enctype="text/plain">
+      <label class="campo">
+        <span>Nombre</span>
+        <input type="text" name="nombre" placeholder="¿Cómo te llamás?" required>
+      </label>
+
+      <label class="campo">
+        <span>Correo electrónico</span>
+        <input type="email" name="correo" placeholder="tunombre@correo.com" required>
+      </label>
+
+      <label class="campo">
+        <span>Mensaje</span>
+        <textarea name="mensaje" rows="5" placeholder="Contame qué tenés en mente..." required></textarea>
+      </label>
+
+      <button type="submit" class="boton-enviar">Enviar mensaje ✦</button>
+    </form>
+  </section>
+</main>
+
+<footer class="pie">
+  <p>Hecho con lápiz, café y demasiados colores · © 2026</p>
+</footer>
+
+</body>
+</html>

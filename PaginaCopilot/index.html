@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galería de Dibujos</title>
+  <link rel="stylesheet" href="estilosIA.css" />
+</head>
+<body>
+  <header class="encabezado">
+    <h1>🎨 Galería Maximalista de Dibujos</h1>
+    <p>Caricaturas, Paisajes y Animé en un solo lugar</p>
+  </header>
+
+  <nav class="navbar">
+    <a href="#catalogo">Catálogo</a>
+    <a href="#mantenimiento">Quién mantiene el sitio</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <section id="catalogo" class="seccion">
+      <h2>Catálogo de dibujos</h2>
+      <p>Elige una categoría:</p>
+
+      <div class="tabs">
+        <a href="#caricaturas" class="tab">Caricaturas</a>
+        <a href="#paisajes" class="tab">Paisajes</a>
+        <a href="#anime" class="tab">Animé</a>
+      </div>
+
+      <div class="categorias-contenedor">
+        <article id="caricaturas" class="categoria">
+          <h3>Caricaturas</h3>
+          <div class="galeria">
+            <figure class="dibujo">
+              <img src="imagenes/caricatura1.png" alt="Caricatura 1" />
+              <figcaption>Caricatura 1</figcaption>
+            </figure>
+            <figure class="dibujo">
+              <img src="imagenes/caricatura2.png" alt="Caricatura 2" />
+              <figcaption>Caricatura 2</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article id="paisajes" class="categoria">
+          <h3>Paisajes</h3>
+          <div class="galeria">
+            <figure class="dibujo">
+              <img src="imagenes/paisaje1.png" alt="Paisaje 1" />
+              <figcaption>Paisaje 1</figcaption>
+            </figure>
+            <figure class="dibujo">
+              <img src="imagenes/paisaje2.png" alt="Paisaje 2" />
+              <figcaption>Paisaje 2</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article id="anime" class="categoria">
+          <h3>Animé</h3>
+          <div class="galeria">
+            <figure class="dibujo">
+              <img src="imagenes/anime1.png" alt="Animé 1" />
+              <figcaption>Animé 1</figcaption>
+            </figure>
+            <figure class="dibujo">
+              <img src="imagenes/anime2.png" alt="Animé 2" />
+              <figcaption>Animé 2</figcaption>
+            </figure>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="mantenimiento" class="seccion">
+      <h2>Quién mantiene el sitio</h2>
+      <p>
+        Este sitio está mantenido por un/a artista y desarrollador/a independiente apasionado/a por
+        el diseño visual, la ilustración y la cultura pop.
+      </p>
+    </section>
+
+    <section id="contacto" class="seccion">
+      <h2>Contacto</h2>
+      <form class="formulario" action="#" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>© 2026 Galería de Dibujos Maximalista</p>
+  </footer>
+</body>
+</html>

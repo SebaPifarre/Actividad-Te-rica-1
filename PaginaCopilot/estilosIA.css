@@ -1,0 +1,232 @@
+/* ===== Reset básico ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --rosa: #ff4fa3;
+  --amarillo: #ffd84d;
+  --turquesa: #34d8eb;
+  --morado: #8b5cf6;
+  --fondo: #fff6fb;
+  --texto: #2c1b3a;
+  --blanco: #ffffff;
+  --borde: #2c1b3a;
+}
+
+body {
+  font-family: "Trebuchet MS", "Verdana", sans-serif;
+  color: var(--texto);
+  background:
+    radial-gradient(circle at 10% 10%, #ffd5ef 0 10%, transparent 11%),
+    radial-gradient(circle at 90% 15%, #d9fffb 0 9%, transparent 10%),
+    radial-gradient(circle at 20% 85%, #fff1c4 0 8%, transparent 9%),
+    linear-gradient(135deg, #fff6fb, #f9f7ff);
+  min-height: 100vh;
+}
+
+/* ===== Encabezado ===== */
+.encabezado {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 6px dashed var(--morado);
+  background: linear-gradient(90deg, var(--rosa), var(--turquesa), var(--amarillo));
+  color: #2b0a3d;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.encabezado h1 {
+  font-size: clamp(1.6rem, 4vw, 2.8rem);
+  margin-bottom: 0.5rem;
+}
+
+.encabezado p {
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+  font-weight: bold;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 4px solid var(--borde);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--texto);
+  font-weight: 700;
+  padding: 0.6rem 1rem;
+  border: 3px solid var(--borde);
+  background: var(--amarillo);
+  border-radius: 12px;
+  box-shadow: 3px 3px 0 var(--borde);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.navbar a:hover {
+  transform: translate(-2px, -2px);
+  background: var(--rosa);
+  color: #fff;
+}
+
+/* ===== Secciones ===== */
+main {
+  width: min(1100px, 95%);
+  margin: 1.5rem auto 2.5rem;
+}
+
+.seccion {
+  background: rgba(255, 255, 255, 0.95);
+  border: 4px solid var(--borde);
+  border-radius: 18px;
+  box-shadow: 8px 8px 0 #d9c9ff;
+  padding: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.seccion h2 {
+  margin-bottom: 0.8rem;
+  font-size: clamp(1.2rem, 2.7vw, 1.8rem);
+}
+
+/* ===== Tabs de categorías ===== */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin: 1rem 0 1.2rem;
+}
+
+.tab {
+  text-decoration: none;
+  color: #fff;
+  background: var(--morado);
+  border: 3px solid var(--borde);
+  padding: 0.55rem 0.95rem;
+  border-radius: 999px;
+  font-weight: 700;
+  box-shadow: 2px 2px 0 var(--borde);
+}
+
+.tab:hover {
+  background: var(--turquesa);
+  color: #1f1130;
+}
+
+/* ===== Galerías ===== */
+.categorias-contenedor {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.categoria h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.15rem;
+  color: #4b1f72;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+/* Condición 4: mismo borde y relleno para todos los dibujos */
+.dibujo {
+  width: 100%;
+  max-width: 260px;
+  border: 4px solid var(--borde);
+  padding: 0.7rem;
+  background: var(--blanco);
+  border-radius: 14px;
+  box-shadow: 5px 5px 0 var(--rosa);
+  text-align: center;
+}
+
+.dibujo img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border: 3px solid #333;
+  border-radius: 10px;
+  display: block;
+}
+
+.dibujo figcaption {
+  margin-top: 0.55rem;
+  font-weight: 700;
+}
+
+/* ===== Formulario ===== */
+.formulario {
+  display: grid;
+  gap: 0.65rem;
+  max-width: 560px;
+}
+
+.formulario label {
+  font-weight: 700;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  border: 3px solid var(--borde);
+  border-radius: 10px;
+  padding: 0.6rem 0.7rem;
+  background: #fffef8;
+  font: inherit;
+}
+
+.formulario button {
+  margin-top: 0.4rem;
+  width: fit-content;
+  border: 3px solid var(--borde);
+  background: var(--rosa);
+  color: #fff;
+  font-weight: 800;
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 var(--borde);
+}
+
+.formulario button:hover {
+  background: var(--morado);
+}
+
+/* ===== Footer ===== */
+.pie {
+  text-align: center;
+  padding: 1rem;
+  border-top: 4px solid var(--borde);
+  background: #fff;
+  font-weight: 700;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+  .seccion {
+    padding: 1rem;
+  }
+
+  .dibujo img {
+    height: 170px;
+  }
+
+  .navbar a {
+    width: 100%;
+    text-align: center;
+  }
+}

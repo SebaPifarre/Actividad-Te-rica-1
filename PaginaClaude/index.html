@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Rincón de Dibujos · Catálogo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+
+<div class="blob blob-a" aria-hidden="true"></div>
+<div class="blob blob-b" aria-hidden="true"></div>
+<div class="blob blob-c" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a class="marca" href="index.html">✦ Mi Rincón de Dibujos ✦</a>
+  <nav class="navbar">
+    <a href="index.html" class="nav-link nav-link--activa">Catálogo</a>
+    <a href="sobre-mi.html" class="nav-link">Quién mantiene esto</a>
+    <a href="contacto.html" class="nav-link">Contacto</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1 class="hero-titulo">Dibujos con <span>mucha</span> onda</h1>
+    <p class="hero-sub">Caricaturas, paisajes y animé, todo hecho a mano y guardado acá para que lo mires con calma (o con caos, como prefieras).</p>
+  </section>
+
+  <section class="selector-wrap">
+    <h2 class="titulo-seccion">Elegí una categoría</h2>
+
+    <!-- Selector estático de categorías: sin JavaScript, con inputs radio ocultos -->
+    <input type="radio" name="categoria" id="tab-caricaturas" class="tab-input" checked>
+    <input type="radio" name="categoria" id="tab-paisajes" class="tab-input">
+    <input type="radio" name="categoria" id="tab-anime" class="tab-input">
+
+    <div class="tabs">
+      <label for="tab-caricaturas" class="tab tab--rosa">🎭 Caricaturas</label>
+      <label for="tab-paisajes" class="tab tab--turquesa">🏞️ Paisajes</label>
+      <label for="tab-anime" class="tab tab--violeta">✨ Animé</label>
+    </div>
+
+    <div class="galeria">
+      <div class="panel panel-caricaturas">
+        <div class="panel-grid">
+          <figure class="dibujo">
+            <img src="imagenes/caricatura1.png" alt="Caricatura de un chico con pelo violeta en punta y nariz grande">
+            <figcaption>Retrato con nariz de campeón</figcaption>
+          </figure>
+          <figure class="dibujo">
+            <img src="imagenes/caricatura2.png" alt="Caricatura de un chico con gorro rosa, anteojos grandes y pecas">
+            <figcaption>El pecoso del gorro</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="panel panel-paisajes">
+        <div class="panel-grid">
+          <figure class="dibujo">
+            <img src="imagenes/paisaje1.png" alt="Paisaje con montañas violetas, sol amarillo y mar turquesa">
+            <figcaption>Atardecer entre montañas</figcaption>
+          </figure>
+          <figure class="dibujo">
+            <img src="imagenes/paisaje2.png" alt="Paisaje con colinas verdes, árboles, nubes y sol">
+            <figcaption>Colinas de domingo</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="panel panel-anime">
+        <div class="panel-grid">
+          <figure class="dibujo">
+            <img src="imagenes/anime1.png" alt="Personaje animé con pelo violeta y ojos turquesa">
+            <figcaption>Ojos turquesa</figcaption>
+          </figure>
+          <figure class="dibujo">
+            <img src="imagenes/anime2.png" alt="Personaje animé con pelo rosa en puntas y ojos naranjas">
+            <figcaption>Pelo en llamas</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <p>Hecho con lápiz, café y demasiados colores · © 2026</p>
+</footer>
+
+</body>
+</html>
